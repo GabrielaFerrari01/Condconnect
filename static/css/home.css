@@ -1,0 +1,426 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 36px;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 120px 0;
+}
+
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+
+.hero-text p {
+    color: var(--gray);
+    margin-bottom: 25px;
+    max-width: 450px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.how {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.how .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.steps {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.step-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.step-card h3 {
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.step-card h4 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.step-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ===== FEATURES SECTION ===== */
+
+.features {
+    padding: 120px 0;
+}
+
+.features-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.features-text {
+    flex: 1;
+}
+
+.features-text h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.features-text .section-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--gray);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 16px;
+    color: #4b5563;
+    /* slightly darker gray */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Bolinha azul com check */
+.features-list li::before {
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+    flex-shrink: 0;
+    /* Prevents shrinking if text is long */
+}
+
+.features-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* Align image slightly */
+}
+
+.features-image img {
+    width: 100%;
+    max-width: 500px;
+    /* Optional constraint */
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /* softer shadow */
+}
+
+
+/* BENEFITS */
+.benefits {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.benefits .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.benefit-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.benefit-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.benefit-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.benefit-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps,
+    .benefit-cards {
+        flex-direction: column;
+    }
+}
+
+.badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.metrics {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.metrics strong {
+    font-size: 28px;
+    display: block;
+}
+
+.metrics p {
+    color: var(--gray);
+    margin: 5px 0 0 0;
+}
+
+/* ===== FLOATING CARDS ===== */
+
+.hero-image {
+    position: relative;
+}
+
+.floating-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 14px 18px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    font-family: 'Inter', sans-serif;
+    min-width: 220px;
+}
+
+/* Ícone circular */
+.floating-card::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Card de venda */
+.top-card {
+    top: 40px;
+    left: -30px;
+}
+
+.top-card::before {
+    background: #dcfce7;
+    /* verde claro */
+}
+
+/* Card de mensagem */
+.bottom-card {
+    bottom: 40px;
+    right: -30px;
+}
+
+.bottom-card::before {
+    background: #dbeafe;
+    /* azul claro */
+}
+
+/* Texto */
+.floating-card strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.floating-card p {
+    font-size: 13px;
+    color: var(--gray);
+    margin: 2px 0 0 0;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 100px 0 140px;
+    background-color: #f8fafc;
+    /* Subtle light background to make it pop */
+}
+
+.cta-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 52px;
+    font-weight: 750;
+    margin-bottom: 16px;
+    color: #111827;
+    letter-spacing: -1px;
+}
+
+.cta p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 48px;
+    opacity: 0.9;
+}
+
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 80px 0 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+}
